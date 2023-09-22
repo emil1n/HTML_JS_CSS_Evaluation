@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Request System</title>
+    <link rel="stylesheet" href="/css/travelrequest.css">
+    <link rel="stylesheet" href="/css/bootstrap-4.6.2-dist/bootstrap-4.6.2-dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="customcontainer">
+        <div class="header">
+            <h1>TRAVEL REQUESTOR</h1>
+            <button class="buttonlog" onclick="login()" id="subtBtn">Log out</button>
+            <img src="icon.png" alt="icon" class="image">
+        </div>
+
+
+        <div class="button-container row-padding">
+            <button class="button" id="toggle-form-button">Form</button>
+            <button class="button" id="button2">View Request</button>
+            <div class="options" id="options1">
+                <a href="#" onclick="showTable('table')">All</a>
+                <a href="#" onclick="showTable('')">Critical</a>
+                <a href="#" onclick="showTable('')">Normal</a>
+                <a href="#" onclick="showTable('')">Rejected</a>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <form id="travel-request-form">
+            <div class="form-row row-padding ">
+                <div>
+                    <label for="empid">Emp Id: </label>
+                    <input type="text" id="empid" required placeholder="Employee ID">
+                </div>
+                <div>
+                    <label for="empname">Emp Name: </label>
+                    <input type="text" id="emp-name" required placeholder="Employee Name">
+                </div>
+            </div>
+
+
+            <div class="form-row row-padding">
+                <div>
+                    <label for="project">Project: </label>
+                    <input type="text" id="project" required placeholder="Project ">
+                </div>
+                <div>
+                    <label for="cause">Cause for Travel: </label>
+                    <input type="text" id="emp-name" required placeholder="Cause">
+                </div>
+            </div>
+
+
+            <div class="form-row row-padding">
+                <div>
+                    <label for="source">Source: </label>
+                    <input type="text" id="source" required placeholder="Source ">
+                </div>
+                <div>
+                    <label for="destination">Destination: </label>
+                    <input type="text" id="destination" required placeholder="Destination">
+                </div>
+            </div>
+
+            <div class="form-row row-padding">
+                <div>
+                    <label for="fromdate">From Date:</label>
+                    <input type="date" id="fromdate" required>
+                </div>
+                <div>
+                    <label for="numOfDays">Number of Days:</label>
+                    <select id="numOfDays" name="numOfDays" onchange="updateToDate()">
+                        <option value="1">1 </option>
+                        <option value="2">2 </option>
+                        <option value="3">3 </option>
+                        <option value="2">4 </option>
+                        <option value="3">5 </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="todate">To Date:</label>
+                    <input type="date" id="todate" required>
+                </div>
+            </div>
+
+            <div>
+                <label for="mode">Mode Of Travel:</label>
+                <input type="text" id="mode" required placeholder="Mode Of Travel">
+            </div>
+            <div class="container">
+                <div>
+                    <button class="bottom-right-button" type="button" onclick="">Submit</button>
+                </div>
+            </div>
+        </form>
+
+
+        <table id="table" border="1">
+            <tr>
+                <th>Emloyee Name</th>
+                <th>Designation</th>
+                <th>Priority</th>
+                <th>view Details</th>
+
+            </tr>
+            <tr>
+                <td>Ram</td>
+                <td>UK</td>
+                <td>Critical</td>
+                <td><a href="ramdetails.html">View more</a></td>
+            </tr>
+            <tr>
+                <td>Cyril</td>
+                <td>LS</td>
+                <td>Normal</td>
+                <td><a href="#">View more</a></td>
+            </tr>
+        </table>
+        <script src="/js/travelrequest.js"></script>
+    </div>
+</body>
+
+</html>

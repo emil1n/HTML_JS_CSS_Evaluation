@@ -1,0 +1,152 @@
+.customcontainer{
+    background-color: rgb(221, 224, 255);
+    max-width: 2000px;
+    margin: 20px auto;
+    padding:20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0;
+
+ }
+
+.container {
+    position: relative; /* Make the container a reference for positioning */
+    width: 700px; /* Adjust the container width as needed */
+    height: auto; /* Allow the container to expand based on content */
+  
+    padding: 20px; /* Add padding around the content */
+  }
+          .form-row {
+              display: flex;
+              justify-content: space-between;
+          }
+  
+          .form-group {
+              margin-bottom: 15px;
+              display: flex;
+              align-items: center;
+          }
+          .row-padding
+          {
+              height: 40px;
+              clear: both;
+  
+          }
+  
+          .form-group {
+              margin-bottom: 30px;
+              display: flex;
+              align-items: center;
+          }
+  
+      .bottom-right-button {
+    position: absolute; /* Position the button absolutely */
+    bottom: 10px; /* Adjust the bottom position to place it just below the content */
+    right: 10px; /* Adjust the right position to place it at the right */
+    color: rgb(7, 7, 7);
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px; /* Add padding to the button for better visibility */
+  }
+  
+  .button-container {
+              position: relative;
+              display: inline-block;
+          }
+          /* Style for the button */
+          .button-container .button {
+              background-color: #3498db;
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              cursor: pointer;
+          }
+  
+          /* Style for the options container */
+          .options {
+              position: absolute;
+              left: 0;
+              top: 100%;
+              background-color: #f1f1f1;
+              border: 1px solid #ddd;
+              border-top: none;
+              display: none;
+              min-width: 160px;
+              z-index: 1;
+          }
+  
+          /* Style for individual options */
+          .options a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+          }
+  
+          /* Hover effect for options */
+          .options a:hover {
+              background-color: #ddd;
+          }
+  
+          .header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+          }
+  
+          .heading {
+              font-size: 24px;
+              margin-right: 10px;
+          }
+  
+          .buttonlog {
+              padding: 10px 20px;
+              background-color: #e0e2e4;
+              color: rgb(10, 10, 10);
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              margin-left: 1000px;
+              
+          }
+  
+          .image {
+              width: 50px; /* Adjust the width as needed */
+              height: auto;
+              margin-right: 5px;
+          }
+  
+          #travel-request-form {
+              display: none;
+          }
+  
+          #table-container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-height: 100vh;
+          }
+          
+          #table{
+              display: none;
+              border-collapse: collapse;
+              margin: 0 auto;
+              border: 3px solid black;
+          }
+  
+          #table th, #table td {
+              border: 3px solid black; /* Set border width for table cells */
+          }
+          #numOfDays {
+    padding: 8px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    width: 100px; /* Set a fixed width or adjust as needed */
+}
+
+/* Style for the "To Date" input */
+#todate {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <link rel="stylesheet" href="/css/viewadmin.css">
+</head>
+<body>
+    <div class="header">
+        <h1>TRAVEL REQUESTOR</h1>
+        <button class="buttonlog" onclick="login()"  id="subtBtn">Log out</button>
+        <img src="icon.png" alt="icon" class="image">
+    </div>
+   
+    <div class="navbar">
+        <a href="#" onclick="showTable('Table')">Pending</a>
+        <a href="#">All</a>
+        <a href="#">Approved</a>
+        <a href="#">Rejected</a>
+        <a href="#">On Hold</a>
+    </div>
+    <table  id="Table" border="1">
+        <tr>
+            <th>Emloyee Name</th>
+            <th>Designation</th>
+            <th>Priority</th>
+            <th>view Details</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Ram</td>
+            <td>UK</td>
+            <td>Critical</td>
+            <td><a href="ramdetails.html">View more</a></td>
+            <td><select id="optionSelect">
+                <option value="approved">Approved</option>
+                <option value="rejected">Rejected</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Cyril</td>
+            <td>LS</td>
+            <td>Normal</td>
+            <td><a href="#">View more</a></td>
+            <td><select id="optionSelect">
+                <option value="approved">Approved</option>
+                <option value="rejected">Rejected</option>
+            </select></td>
+        </tr>
+    </table>
+     <script src="/js/viewadmin.js"></script>
+</body>
+</html>
